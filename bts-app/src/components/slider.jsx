@@ -1,7 +1,5 @@
-// src/components/Slider.js
-
 import React, { useState, useRef } from "react";
-import "../Styles/mediaSlider.css";
+import "../styles/mediaSlider.css";
 import { ReactComponent as LeftArrowIcon } from "../assets/left-arrow.svg";
 import { ReactComponent as RightArrowIcon } from "../assets/right-arrow.svg";
 import TrailerModal from "./trailermodal";

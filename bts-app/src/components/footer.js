@@ -5,7 +5,7 @@ import {
   faTwitter,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-import "../Styles/Footer.css";
+import "../styles/Footer.css";
 
 const socialLinks = [
   {

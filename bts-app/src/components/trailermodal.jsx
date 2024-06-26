@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/trailerModal.css";
 
-const trailermodal = ({ videoId, onClose }) => {
+const TrailerModal = ({ videoId, onClose }) => {
   return (
     <>
       <div className="trailer-modal-backdrop" onClick={onClose} />
@@ -25,4 +25,4 @@ const trailermodal = ({ videoId, onClose }) => {
   );
 };
 
-export default trailermodal;
+export default TrailerModal;
