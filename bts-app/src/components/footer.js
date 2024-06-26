@@ -5,48 +5,45 @@ import {
   faTwitter,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+
 import "../styles/Footer.css";
 
 const socialLinks = [
   {
-    href: "https://www.instagram.com/mamamoo_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    href: "https://www.instagram.com/bts.bighitofficial/",
     icon: faInstagram,
     label: "Instagram",
   },
   {
-    href: "https://twitter.com/RBW_MAMAMOO",
+    href: "https://twitter.com/bts_bighit",
     icon: faTwitter,
     label: "Twitter",
   },
   {
-    href: "https://www.facebook.com/RBWMAMAMOO",
+    href: "https://www.facebook.com/bangtan.official/",
     icon: faFacebook,
     label: "Facebook",
   },
 ];
 
-const footer = () => {
-  return React.createElement(
-    "footer",
-    { className: "footer" },
-    React.createElement(
-      "div",
-      { className: "footer__social" },
-      socialLinks.map((link, index) =>
-        React.createElement(
-          "a",
-          {
-            key: index,
-            href: link.href,
-            target: "_blank",
-            rel: "noopener noreferrer",
-            "aria-label": link.label,
-          },
-          React.createElement(FontAwesomeIcon, { icon: link.icon, size: "2x" })
-        )
-      )
-    )
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer__social">
+        {socialLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.label}
+          >
+            <FontAwesomeIcon icon={link.icon} size="2x" />
+          </a>
+        ))}
+      </div>
+    </footer>
   );
 };
 
-export default footer;
+export default Footer;
