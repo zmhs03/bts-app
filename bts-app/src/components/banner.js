@@ -19,7 +19,7 @@ const Banner = () => {
       title: "BTS",
       description:
         "BTS, also known as the Bangtan Boys, is a South Korean boy band formed by Big Hit Entertainment. Consisting of seven members: RM, Jin, Suga, J-Hope, Jimin, V, and Jungkook.",
-      spotifyLink: "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX", // BTS Spotify link
+      spotifyLink: "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX",
     },
     {
       image: Banner2,
@@ -27,7 +27,7 @@ const Banner = () => {
       description:
         "Jung Ho-seok (정호석), better known as J-Hope, is a rapper, dancer, and songwriter in BTS. He has also released solo works, including the mixtape 'Hope World'.",
       spotifyLink:
-        "https://open.spotify.com/artist/0b1sIQumIAsNbqAoIClSpy?si=u5CBBpMpTEumGuJ_kpU4wA", // J-Hope Spotify link
+        "https://open.spotify.com/artist/0b1sIQumIAsNbqAoIClSpy?si=u5CBBpMpTEumGuJ_kpU4wA",
     },
     {
       image: Banner3,
@@ -35,7 +35,7 @@ const Banner = () => {
       description:
         "Park Ji-min (박지민), known mononymously as Jimin, is a vocalist and dancer in BTS. He is celebrated for his powerful vocal range and dynamic dance performances.",
       spotifyLink:
-        "https://open.spotify.com/artist/1oSPZhvZMIrWW5I41kPkkY?si=49a7038147884b48", // Jimin Spotify link
+        "https://open.spotify.com/artist/1oSPZhvZMIrWW5I41kPkkY?si=49a7038147884b48",
     },
     {
       image: Banner4,
@@ -43,7 +43,7 @@ const Banner = () => {
       description:
         "Kim Seok-jin (김석진), known as Jin, is a vocalist and visual of BTS. He has contributed to BTS's discography with his solo song 'Epiphany' among others.",
       spotifyLink:
-        "https://open.spotify.com/artist/5vV3bFXnN6D6N3Nj4xRvaV?si=5d64968ac33b45ef", // Jin Spotify link
+        "https://open.spotify.com/artist/5vV3bFXnN6D6N3Nj4xRvaV?si=5d64968ac33b45ef",
     },
     {
       image: Banner5,
@@ -51,7 +51,7 @@ const Banner = () => {
       description:
         "Jeon Jung-kook (전정국), known as Jungkook, is the youngest member and main vocalist of BTS. His solo works include 'Euphoria' and 'My Time'.",
       spotifyLink:
-        "https://open.spotify.com/artist/6HaGTQPmzraVmaVxvz6EUc?si=FRsCRS0dR7G0VPabVWCcMg", // Jungkook Spotify link
+        "https://open.spotify.com/artist/6HaGTQPmzraVmaVxvz6EUc?si=FRsCRS0dR7G0VPabVWCcMg",
     },
     {
       image: Banner6,
@@ -59,7 +59,7 @@ const Banner = () => {
       description:
         "Kim Nam-joon (김남준), known as RM, is the leader and main rapper of BTS. He has released solo works such as the mixtapes 'RM' and 'Mono'.",
       spotifyLink:
-        "https://open.spotify.com/artist/2auC28zjQyVTsiZKNgPRGs?si=_29dlguKQG2Q_iiY3oGbbQ", // RM Spotify link
+        "https://open.spotify.com/artist/2auC28zjQyVTsiZKNgPRGs?si=_29dlguKQG2Q_iiY3oGbbQ",
     },
     {
       image: Banner7,
@@ -67,7 +67,7 @@ const Banner = () => {
       description:
         "Min Yoon-gi (민윤기), known as Suga or Agust D, is a rapper, songwriter, and producer in BTS. He has released solo works including the mixtape 'Agust D'.",
       spotifyLink:
-        "https://open.spotify.com/artist/5RmQ8k4l3HZ8JoPb4mNsML?si=cyIVd7wBRNSohRIQqGV9vA", // Suga Spotify link
+        "https://open.spotify.com/artist/5RmQ8k4l3HZ8JoPb4mNsML?si=cyIVd7wBRNSohRIQqGV9vA",
     },
     {
       image: Banner8,
@@ -75,7 +75,7 @@ const Banner = () => {
       description:
         "Kim Tae-hyung (김태형), known as V, is a vocalist in BTS. He has contributed to BTS's sound with his solo songs like 'Singularity' and 'Stigma'.",
       spotifyLink:
-        "https://open.spotify.com/artist/3JsHnjpbhX4SnySpvpa9DK?si=3d467ab9c424459a", // V Spotify link
+        "https://open.spotify.com/artist/3JsHnjpbhX4SnySpvpa9DK?si=3d467ab9c424459a",
     },
   ];
 
@@ -87,6 +87,12 @@ const Banner = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    appendDots: (dots) => (
+      <div style={{ position: "relative" }}>
+        <ul style={{ margin: "0px" }}>{dots}</ul>
+        <div className="carousel__indicator"></div>
+      </div>
+    ),
   };
 
   const openSpotifyLink = (link) => {

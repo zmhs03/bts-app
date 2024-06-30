@@ -1,5 +1,5 @@
 .footer {
-  background-color: #13151e;
+  background-color: #14191d;
   color: #f5f5fa;
   padding: 20px 0;
   text-align: center;
@@ -13,6 +13,6 @@
 
 .footer__social a {
   margin: 0 10px;
-  color: #82559b; /* Adjust color as per your design */
+  color: #a101f8; /* Adjust color as per your design */
   font-size: 24px; /* Adjust size as per your design */
 }
